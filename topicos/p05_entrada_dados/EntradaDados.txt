@@ -1,0 +1,34 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - ENTRADA DE DADOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Entrada de dados é a operação que consiste em receber dados do usuário. Normalmente a entrada padrão
+é o teclado, mas pode ser um arquivo em disco ou um outro dispositivo qualquer.
+  
+A Linguagem Python disponibiliza o comando 'input' para receber dados do usuário. O comando 'input'
+possibilita a entrada de diversos tipos de dados.
+
+Exemplo:
+
+#!python3
+
+# Recebendo um texto
+# --------------------------------------------------------------------------------
+nome = input("Qual é o seu nome? ")
+print(f"Olá {nome}")
+
+
+# Recebendo um número inteiro
+# --------------------------------------------------------------------------------
+idade = input("Qual é a sua idade? ")
+print(f"Você tem {idade} anos")
+
+
+# Recebendo um número decimal
+# --------------------------------------------------------------------------------
+altura = input("Qual é a sua altura? ")
+print(f"Sua altura é {altura}")
+

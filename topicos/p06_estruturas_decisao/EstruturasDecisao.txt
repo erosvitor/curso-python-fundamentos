@@ -1,0 +1,63 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - ESTRUTURAS DE DECISÃO
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Estruturas de decisão são blocos de comandos que permitem ao programa de computador executar ou não
+um determinado conjunto de comandos de acordo com o resultado de uma expressão lógica.
+  
+As estruturas de decisão disponíveis na Linguagem Python são:
+  
+  IF
+
+
+Estrutura de decisão 'IF'
+  
+A estrutura de decisão IF avalia expressões relacionais e lógicas para a tomada de decisão. A 
+Linguagem Python disponibiliza os seguintes operadores relacionais:
+  
+  igual           ( = )
+  não igual       ( != )
+  maior que       ( > )
+  menor que       ( < )
+  maior igual que ( >= )
+  menor igual que ( <= )
+    
+Além dos operadores relacionais, a Liguagem Python também oferece os seguintes operadores lógicos:
+    
+  e       ( and )
+  ou      ( or )
+  negação ( not )
+
+
+Exemplo:
+
+#!python3
+
+# Avaliando apenas o resultado positivo
+# ----------------------------------------------------------------------------------------------------
+idade = 18
+if (idade >= 18):
+  print("Maior de idade")
+
+# Avaliando o resultado positivo e negativo
+# ----------------------------------------------------------------------------------------------------
+idade = 17
+if (idade >= 18):
+  print("Maior de idade")
+else:
+  print("Menor de idade")
+
+
+# Avaliando mais de uma situação
+# ----------------------------------------------------------------------------------------------------
+idade = 15
+if (idade >= 18):
+  print("Maior de idade")
+elif (idade >= 16):
+  print("Menor de idade e pode votar")
+else:
+  print("Menor de idade e não pode votar")
+

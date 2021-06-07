@@ -1,0 +1,43 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - OPERADORES E EXPRESSÕES
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Um operador é um símbolo gráfico utilizado na construção de expressões aritméticas. Os operadores
+disponíveis na Linguagem Pyhton são:
+    
+  Operador de atribuição (=)
+  Operadores aritméticos (+, -, *, /, //, **, %)
+  Operadores compactos (+=, -=, *=, /=, %=)
+
+Quando houver mais de um operador numa expressão aritmética, a seguinte ordem de precedência será
+aplicada:
+
+  - Parêntesis
+  - Exponenciação
+  - Multiplicação e Divisão
+  - Adição e Subtração
+
+Uma expressão aritmética que contenha mais de um mesmo operador, a ordem de execução será da direita
+para a esquerda. Para a maioria dos operadores aritméticos, isso não fará diferença. Mas quando for
+o operador de exponenciação, fará toda a diferença. Por exemplo:
+
+  2 ** 2 ** 3
+
+  resultará em 256 e não 64.
+
+Exemplo:
+
+#!python3
+
+n1 = 20
+n2 = 10
+
+adicao = n1 + n2
+subtracao = n1 - n2
+multiplicacao = n1 * n2
+divisao = n1 / n2
+resto = n1 % n2
+

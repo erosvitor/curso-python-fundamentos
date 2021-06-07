@@ -1,0 +1,73 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - VARIÁVEIS E TIPOS DE DADOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Na Informática, uma variável é um espaço na memória do computador utilizado para armazenar um 
+determinado dado.
+  
+Todo dado possui um tipo. Os tipos atualmente utilizados no dia-a-dia são: textos, números e valores
+binários (sim/não, verdadeiro/falso, ligado/desligado).
+
+Na Linguagem Pyhton os tipos texto, número e valor binário são referenciados por meio dos seguintes
+termos:
+    
+  dados textos     => str
+  dados numéricos  => int, float e complex
+  valores binários => bool
+      
+Os dados numéricos podem ser divididos em números inteiros e números fracionários.
+  
+  números inteiros     => int
+  números fracionários => float e complex
+   
+  
+Usando variáveis na Linguagem Python
+----------------------------------------------------------------------------------------------------
+As variáveis na Linguagem Python são de tipagem dinâmica, isto significa que o tipo da variável será
+definido quando o dado for atribuido a variável.
+  
+Uma variável na Linguagem Pyhton é definida da seguinte maneira:
+  
+    <identificador-variável> = <dado>
+
+Exemplo:
+
+#!python3
+
+i = 2147483647
+f = 3.14159265
+c = 'p'
+bl = true
+
+
+Identificadores para variáveis
+----------------------------------------------------------------------------------------------------
+A definição de identificadores para variáveis deve seguir as regras abaixo:
+
+- Deve iniciar por uma letra, pelo caractere underscore (_) ou pelo caractere dolar ($)
+- Não pode iniciar por um dígito numérico
+- Não pode conter caracteres especiais, tipo sinais de pontuação, colchetes ou parênteses
+- Não pode conter espaços em branco para definir identificadores compostos
+- Nomes de variáveis são case-sensitive, ou seja, letras minusculas são diiferentes de maiúsculas
+
+
+Verificando o tipo da variável
+----------------------------------------------------------------------------------------------------
+A Linguagem Python disponibiliza o comando 'type' para mostrar o tipo da variável.
+
+Exemplo:
+
+#!python3
+
+a = 5
+print(type(a))
+
+b = 3.14
+print(type(b))
+
+c = 'Python'
+print(type(c))
+
