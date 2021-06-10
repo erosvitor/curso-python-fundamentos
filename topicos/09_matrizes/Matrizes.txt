@@ -1,0 +1,32 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - MATRIZES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na Informática, matrizes são estruturas multidimensionais utilizadas para armazenar uma quantidade
+finita de dados do mesmo tipo.
+    
+A Linguagem Python não oferece suporte nativo ao conceito de matrizes. Quando é preciso trabalhar
+com matrizes, deve-se utilizar listas dentro de listas.
+
+
+Utilizando Matrizes
+---------------------------------------------------------------------------------------------------- 
+# Declarando uma matriz para números inteiros
+numeros = []
+
+# Atribuindo dados para a matriz
+numeros.append([1, 1])
+numeros.append([2, 3])
+print(numeros)
+
+# Atribuindo dados para a matriz na declaração
+coordenadas = [ [ 2, 2 ], [ 2, 8 ], [ 5, 2 ], [ 3, 2 ] ]
+
+# Mostrando os dados contidos na matriz
+for linha in coordenadas:
+  for item in linha:
+    print(item)
+

@@ -1,0 +1,82 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - VETORES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na Informática, vetores são estruturas unidimensionais utilizadas para armazenar uma quantidade
+finita de dados do mesmo tipo.
+    
+A Linguagem Python não oferece suporte nativo ao conceito de vetores. Quando é preciso trabalhar com
+vetores, deve-se utilizar Listas.
+
+
+Utilizando Vetores
+---------------------------------------------------------------------------------------------------- 
+
+# Declarando um vetor para números inteiros
+numeros = []
+
+# Atribuindo dados ao vetor
+numeros.append(1)
+numeros.append(1)
+numeros.append(2)
+numeros.append(3)
+numeros.append(5)
+
+# Atribuindo dados ao vetor na declaração
+pares = [ 0, 2, 4, 6, 8 ]
+
+# Utilizando o tamanho do vetor
+for i in range(0, len(pares)):
+  print(pares[i])
+
+# Mostrando os dados contidos no vetor
+for num in pares:
+  print(num)
+
+# Armazenando textos em vetores
+frutas = ["Uva", "Maçã", "Abacaxi", "Manga", "Banana"]
+
+# Ordenando um vetor de textos
+frutas.sort()
+for fruta in frutas:
+  print(fruta)
+
+
+Operações sobre vetores
+---------------------------------------------------------------------------------------------------- 
+
+marcas_veiculos = ["Fiat", "Mercedes", "Ford", "BMW"]
+
+# Obter quantidade de elementos
+print(len(marcas_veiculos))
+
+# Verificar se um determinado item existe na lista
+print("Chevrolet" in marcas_veiculos)
+
+# Adicionar item no final da lista
+marcas_veiculos.append("Chevrolet")
+print(marcas_veiculos)
+
+# Inserir item numa determinada posição da lista
+marcas_veiculos.insert(1, "Ferrari")
+print(marcas_veiculos)
+
+# Ordenar a lista em ordem ascendente
+marcas_veiculos.sort()
+print(marcas_veiculos)
+
+# Ordenar a lista em ordem descendente
+marcas_veiculos.reverse()
+print(marcas_veiculos)
+
+# Retirar o último elemento da lista
+ultimo_elemento = marcas_veiculos.pop()
+print(ultimo_elemento)
+print(marcas_veiculos)
+
+# Remover todos os elementos da lista
+marcas_veiculos.clear()
+
