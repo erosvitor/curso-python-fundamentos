@@ -1,0 +1,52 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - DATA E HORA
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+A Linguagem Python provê suporte a data e hora através do pacote 'datetime'.
+
+
+Utilizando data e hora
+---------------------------------------------------------------------------------------------------- 
+
+from datetime import date, datetime, timedelta
+
+# Exibindo a data e hora atual
+dataHoraAtual = datetime.now()
+print(dataHoraAtual)
+
+# Formatando a data e hora atual
+dataHoraFormatada = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+print(dataHoraFormatada)
+
+# Exibindo apenas a data atual
+dataAtual = date.today()
+print(dataAtual)
+
+# Formatando a data atual
+dataAtualFormatada = date.today().strftime("%d/%m/%Y")
+print(dataAtualFormatada)
+
+# Exibindo apenas a hora atual
+horaAtual = datetime.now().time()
+print(horaAtual)
+
+# Criando uma data e hora específica
+dataStr = "01/01/1990 12:30:00"
+data = datetime.strptime(dataStr, "%d/%m/%Y %H:%M:%S")
+print(data)
+
+# Manipulando uma data
+# timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
+data = datetime.now()
+data = data + timedelta(days=1)  
+print(data)
+
+# Extraindo dados de uma data
+data = datetime.now()
+print("Dia: ", data.day)
+print("Mês: ", data.month)
+print("Ano: ", data.year)
+

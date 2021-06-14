@@ -1,0 +1,51 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - ARQUIVOS TEXTOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Arquivos textos são arquivos que podem ser lidos e compreendidos facilmente por seres humanos. Não
+contém nenhuma codificação ou formatação em especial. 
+
+A Linguagem Python oferece os seguintes comandos para manipulação de arquivos textos:
+
+- open
+- write
+- read
+- close
+
+Um arquivo texto pode ser aberto nos seguintes modos: leitura (r), escrita (w) e adição (w+).
+
+
+Escrevendo num arquivo
+---------------------------------------------------------------------------------------------------- 
+#!python3
+
+# Abrindo arquivo modo escrita
+arquivo = open("/home/erosvitor/dadoscurso.txt", "w")
+
+# Escrevendo no arquivo
+arquivo.write("Linguagem Python\n")
+arquivo.write("45 horas\n")
+arquivo.write("Noite\n")
+
+# Fechando o arquivo
+arquivo.close()
+
+
+Lendo um arquivo
+---------------------------------------------------------------------------------------------------- 
+#!python3
+
+# Abrindo arquivo modo leitura
+arquivo = open("/home/erosvitor/dadoscurso.txt", "r")
+
+# Lendo o arquivo
+for linha in arquivo.readlines():
+  linha = linha.replace("\n", "")
+  print(linha)
+
+# Fechando o arquivo
+arquivo.close()
+
