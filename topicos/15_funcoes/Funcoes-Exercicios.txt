@@ -1,0 +1,24 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - FUNÇÕES - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - Juros Simples e Composto
+----------------------------------------------------------------------------------------------------
+Escrever um programa que permita ao usuário calcular juros simples e juros compostos. O programa 
+deve solicitar o capital, a taxa e o período. Na sequência o programa deve solicitar ao usuário o 
+tipo de juros que ele deseja calcular.
+
+Obs1: O calculo do juros simples e do juros compostos devem estar em funções definidas pelo usuário.
+
+Obs2: Mostrar apenas o valor do juros e não o montante final
+
+
+Exercício 02 - Cadastro de Funcionario
+----------------------------------------------------------------------------------------------------
+Escrever um programa que solicite dados para o cadastro de um funcionário. O programa deve solicitar
+o nome, o telefone e a data de nascimento do funcionário. Após receber os dados, o programa deve
+verificar se os dados estão corretos.
+
+Obs: Escrever uma função para verificar se o nome esta correto, uma outra para verificar se o 
+telefone esta correto.

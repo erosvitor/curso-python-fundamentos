@@ -1,0 +1,97 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - EXCEÇÕES
+====================================================================================================
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Uma exceção é um comportamento inexperado que ocorre durante a execução de um programa de computador
+quando algo não planejado ocorre.
+
+Possíveis causas de exceções:
+- Entrada de dados inválida
+- Conversão de dados inválida
+- Manipulação de arquivos inexistentes
+- Falta de permissão para escrever em diretório
+- Queda servidor do banco de dados 
+
+
+Tratando exceções
+---------------------------------------------------------------------------------------------------- 
+A Linguagem Python disponibiliza o bloco de comando 'try..except' para capturar e tratar exceções.
+
+Sintaxe:
+
+  try:
+    <comandos>
+  except:
+    <tratamento-excecao>
+
+Exemplo:
+
+#!python3
+
+numero = input("Digite um número inteiro: ")
+
+try:
+  numero = int(nunero)
+except:
+  print("Número inválido")
+
+
+Tratando exceções específicas
+---------------------------------------------------------------------------------------------------- 
+Durante a execução de um bloco de comandos é possível que ocorre mais de uma exceção. Para tratar de
+forma específica uma determinada exceção é necessário informar o nome da exceção após o comando
+'except'.
+
+Exceções mais conhecidas:
+- ValueError: ocorre na conversão de dados
+- ZeroDivisionError: ocorre quando o divisor é igual a ZERO
+- NameError: ocorre quando uma variável não inicializada é utilizada
+
+
+#!python3
+
+n1 = "aaa"
+n2 = 0
+
+try:
+  resultado = int(n1) / n2
+except ValueError:
+  print("Número inválido")
+
+
+Tratando múltiplas exceções
+---------------------------------------------------------------------------------------------------- 
+#!python3
+
+n1 = "1"
+n2 = 0
+
+try:
+  resultado = int(n1) / n2
+except ValueError:
+  print("Número inválido")
+except ZeroDivisionError:
+  print("Divisor não pode ser zero")  
+
+
+Bloco Finally
+---------------------------------------------------------------------------------------------------- 
+Muitas vezes precisamos que um determinado bloco de comandos seja executado independente se ocorreu
+ou não uma exceção. Este bloco é o 'finally'
+
+
+#!python3
+
+salario = "aaa"
+
+try:
+  salario = float(salario)
+except ValueError:
+  print("Valor inválido")
+finally:
+  print("Este comando sempre será executado")
+
+

@@ -1,0 +1,80 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - MÓDULOS
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Um módulo na Linguagem Python é um conjunto de funções centralizadas num arquivo com a extensão .py.
+
+O objetivo de centralizar funções em arquivos diferentes é para diminuir a complexidade do programa 
+principal e também para o reaproveitamento de código.
+
+
+Criando um módulo
+----------------------------------------------------------------------------------------------------
+
+# calculation.py
+
+def add(x,y):
+  return (x+y)
+
+def sub(x,y):
+  return (x-y)
+
+
+Usando um módulo
+----------------------------------------------------------------------------------------------------
+Para usar um determinado módulo dentro do programa Python é necessário utilizar o comando 'import'
+seguido pelo nome do módulo, assim como no exemplo abaixo.
+
+import calculation
+print(calculation.add(1,2))
+
+
+Importando determinadas funções
+----------------------------------------------------------------------------------------------------
+A Linguagem Python permite a importação de determinadas funções de um módulo.
+
+from calculation import add
+print(add(1,2))
+
+Para importar mais de uma função do módulo, basta relacioná-las usando a vírgula.
+
+from calculation import add,sub
+print(add(1,2))
+print(sub(1,2))
+
+
+Módulos em locais diferentes
+----------------------------------------------------------------------------------------------------
+Se o módulo encontra-se em um local diferente ao do programa principal, será necessário informar ao
+programa a localização do módulo atraves do comando 'sys.path.append'.
+
+import sys
+sys.path.append('/home/test/')
+
+import calculation
+print(calculation.add(1,2))
+
+
+Módulos compilados
+----------------------------------------------------------------------------------------------------
+Para acelerar o carregamento dos módulos, a Linguaguem Python mantem em cache uma versão compilada
+de cada módulo importado. O cache é mantido num diretório chamado '__pycache__'. Cada módulo
+compilado recebe um nome segundo a nomenclatura module.version.pyc, onde 'module' é o nome original
+do módulo, 'version' é a versão do Python utilizada e 'pyc' é a extensão indicando que é um arquivo
+compilado.
+
+Para manter o arquivo compilado atualizado, o Python compara a data do arquivo original com a data 
+do arquivo compilado. Caso a data do arquivo original seja mais atual, o módulo será recompilado.
+
+
+Listando o conteúdo de um módulo
+----------------------------------------------------------------------------------------------------
+No interpretador da Linguagem Python é possível listar todo o conteúdo contido num determinado
+módulo usando o comando 'dir'.
+
+>>> import calculation
+>>> dir(calculation)
+
