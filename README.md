@@ -1,5 +1,5 @@
 ## Sobre
-O projeto é um curso que ensina os fundamentos da linguagem Python.
+O projeto contém tópicos sobre os fundamentos da linguagem Python.
 
 ## Conteúdo do curso
 * Váriáveis e Tipos e dados
