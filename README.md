@@ -11,12 +11,10 @@ O projeto contém tópicos sobre os fundamentos da linguagem Python.
 * Matrizes
 * Strings
 * Caracteres
+* Tratamento de exceções
 * Data e Hora
 * Arquivos textos
 * Sistema de arquivos
-* Funções e Módulos
-* Tratamento de exceções
-* Estruturas de dados
 
 ## Licença
 Este projeto está sob licença do MIT. Para mais detalhes, ver o arquivo LICENSE.

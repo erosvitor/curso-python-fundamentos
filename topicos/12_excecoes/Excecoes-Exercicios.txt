@@ -3,7 +3,7 @@
 CURSO FUNDAMENTOS PYTHON - EXCEÇÕES - EXERCÍCIOS
 ====================================================================================================
 
-Exercício 01 - Calcula Área Figuras
+Exercício 01 - Calcular Área Figuras
 ---------------------------------------------------------------------------------------------------- 
 Escrever um programa que permita ao usuário realiizar cálculos de áreas de figuras planas.
 
