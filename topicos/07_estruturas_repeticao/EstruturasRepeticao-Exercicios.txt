@@ -11,8 +11,8 @@ por 3 que estão entre os números de 0 e 100.
 
 Exercício 02 (FOR) - Tabuada de um número
 ---------------------------------------------------------------------------------------------------- 
-Utilizando a estrutura de repetição FOR, escreva um programa que solicite ao usuário um número inteiro
-e depois mostre na tela a tabuada do número informado no seguinte formato:
+Utilizando a estrutura de repetição FOR, escreva um programa que solicite ao usuário um número
+inteiro e depois mostre na tela a tabuada do número informado no seguinte formato:
 
   N x 1 = Y
   N x 2 = Y

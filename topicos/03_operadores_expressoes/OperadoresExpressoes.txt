@@ -6,11 +6,11 @@ CURSO FUNDAMENTOS PYTHON - OPERADORES E EXPRESSÕES
 Introdução
 ----------------------------------------------------------------------------------------------------
 Um operador é um símbolo gráfico utilizado na construção de expressões aritméticas. Os operadores
-disponíveis na Linguagem Pyhton são:
+disponíveis na Linguagem Python são:
     
-  Operador de atribuição (=)
-  Operadores aritméticos (+, -, *, /, //, **, %)
-  Operadores compactos (+=, -=, *=, /=, %=)
+  Operador de atribuição ( = )
+  Operadores aritméticos ( +, -, *, /, % (resto), // (arredonda para baixo), ** (exponensiação) )
+  Operadores compactos ( +=, -=, *=, /=, %=, //=, **= )
 
 Quando houver mais de um operador numa expressão aritmética, a seguinte ordem de precedência será
 aplicada:

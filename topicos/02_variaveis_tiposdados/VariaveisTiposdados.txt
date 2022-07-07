@@ -5,58 +5,59 @@ CURSO FUNDAMENTOS PYTHON - VARIÁVEIS E TIPOS DE DADOS
 
 Introdução
 ----------------------------------------------------------------------------------------------------
-Na Informática, uma variável é um espaço na memória do computador utilizado para armazenar um 
-determinado dado.
-  
-Todo dado possui um tipo. Os tipos atualmente utilizados no dia-a-dia são: textos, números e valores
-binários (sim/não, verdadeiro/falso, ligado/desligado).
+Um programa de computador é constituído de três partes: entradas, processamento e saídas. As
+entradas são dados que o programa utiliza para executar uma determinada tarefa. Estes dados podem
+ser textos, números ou valores binários (sim/não, verdadeiro/falso, ligado/desligado).
 
-Na Linguagem Pyhton os tipos texto, número e valor binário são referenciados por meio dos seguintes
-termos:
-    
-  dados textos     => str
-  dados numéricos  => int, float e complex
-  valores binários => bool
-      
-Os dados numéricos podem ser divididos em números inteiros e números fracionários.
-  
-  números inteiros     => int
-  números fracionários => float e complex
-   
-  
-Usando variáveis na Linguagem Python
+Os dados precisam ser armazenados para depois serem utilizados no processamento da tarefa. O local
+onde os dados são armazenados recebe o nome de variável.
+
+
+Tipos de dados na linguagem Python
 ----------------------------------------------------------------------------------------------------
-As variáveis na Linguagem Python são de tipagem dinâmica, isto significa que o tipo da variável será
-definido quando o dado for atribuido a variável.
-  
-Uma variável na Linguagem Pyhton é definida da seguinte maneira:
-  
-    <identificador-variável> = <dado>
+A linguagem Python é uma linguagem de tipagem dinâmica, ou seja, o tipo do dado será definido quando
+o dado for atribuido a variável e não durante a declaração da variável, como acontence nas
+linguagens de tipagem estática.
+
+Após o dado ser atribuído, a variável pode assumir um dos seguintes tipos:
+   
+  str             -> para dados do tipo texto
+  int             -> para dados do tipo número inteiro	
+  float, complex  -> para dados do tipo número fracionário
+  bool            -> para dados do tipo binário
+      
+
+Utilizando variáveis na linguagem Python
+----------------------------------------------------------------------------------------------------
+Para utilizar uma variável é preciso declará-la primeiramente. Na linguagem Python uma variável é
+declarada da seguinte maneira:
+
+    <identificador> = <dado>
+
+O 'identificador' é um nome arbitrário dado a variável. O 'dado' é o conteúdo que a variável irá
+armazenar. Diferente de outras linguagens, na linguagem Python não é necessário informar o tipo do
+dado que a variável vai armazenar. Isto ocorre porque Python é uma linguagem de tipagem dinâmica, ou
+seja, o tipo do dado será definido quando o dado for atribuído a variável.
 
 Exemplo:
 
-#!python3
-
-i = 2147483647
-f = 3.14159265
-c = 'p'
-bl = true
-
+    idade = 18
+    
 
 Identificadores para variáveis
 ----------------------------------------------------------------------------------------------------
 A definição de identificadores para variáveis deve seguir as regras abaixo:
 
-- Deve iniciar por uma letra, pelo caractere underscore (_) ou pelo caractere dolar ($)
+- Deve iniciar por uma letra ou pelo caractere underscore (_)
 - Não pode iniciar por um dígito numérico
 - Não pode conter caracteres especiais, tipo sinais de pontuação, colchetes ou parênteses
 - Não pode conter espaços em branco para definir identificadores compostos
-- Nomes de variáveis são case-sensitive, ou seja, letras minusculas são diiferentes de maiúsculas
+- Nomes de variáveis são case-sensitive, ou seja, letras minúsculas são diferentes de maiúsculas
 
 
 Verificando o tipo da variável
 ----------------------------------------------------------------------------------------------------
-A Linguagem Python disponibiliza o comando 'type' para mostrar o tipo da variável.
+A linguagem Python disponibiliza o comando 'type' para mostrar o tipo da variável.
 
 Exemplo:
 
@@ -70,4 +71,19 @@ print(type(b))
 
 c = 'Python'
 print(type(c))
+
+
+Constantes
+----------------------------------------------------------------------------------------------------
+Na linguagem Python não existe uma palavra chave para definir uma constante. Por convenção é 
+utilizado o identificador em caixa alta. Por exemplo:
+
+#!python3
+
+PI = 3.1415
+print(PI)
+
+FILE_SIZE_LIMIT = 2000
+print(FILE_SIZE_LIMIT)
+
 

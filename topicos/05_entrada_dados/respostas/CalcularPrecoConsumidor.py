@@ -11,6 +11,5 @@ custoFabrica = float(custoFabrica)
 
 precoConsumidor = custoFabrica + (custoFabrica * porcentagemDistribuidor)
 precoConsumidor = precoConsumidor + (precoConsumidor * impostos)
-
 print("O preço consumidor é de ", precoConsumidor)
 

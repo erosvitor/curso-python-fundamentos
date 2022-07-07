@@ -9,9 +9,10 @@ Saída de dados é a operação que consiste em mostrar dados ao usuário. Norma
 padrão é o monitor, mas pode ser um arquivo em disco ou um dispositivo conectado ao hardware onde o
 programa Python esta sendo executado.
   
-A Linguagem Python disponibiliza os seguintes comandos para saída de dados:
+A Linguagem Python disponibiliza o seguinte comando para saída de dados:
   
   print - Exibe um dado e avança para a próxima linha
+  
 
 Exemplo:
 

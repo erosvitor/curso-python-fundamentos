@@ -34,8 +34,8 @@ para que o texto possa ser importado por um outro programa.
 
 Exercício 04 - Lista de Emails
 ---------------------------------------------------------------------------------------------------- 
-Criar um programa que prepare uma lista de emails para uma mala direta. O programa deverá armazenar as
-linhas abaixo num vetor, extrair de cada linha o email e armazenar num outro vetor. O programa
+Criar um programa que prepare uma lista de emails para uma mala direta. O programa deverá armazenar
+as linhas abaixo num vetor, extrair de cada linha o email e armazenar num outro vetor. O programa
 deverá mostrar na tela a lista de email processada.
 
   Beltrano da Silva;beltrano@gmail.com

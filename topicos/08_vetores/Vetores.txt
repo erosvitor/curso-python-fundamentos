@@ -80,3 +80,4 @@ print(marcas_veiculos)
 # Remover todos os elementos da lista
 marcas_veiculos.clear()
 
+
