@@ -1,0 +1,153 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - STRINGS E CARACTERES
+====================================================================================================
+
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na linguagem de programação uma string é uma sequencia caracteres delimitados por aspas dupla. Um
+caractere é um símbolo gráfico utilizado para formar um determinado dado.
+
+
+String
+---------------------------------------------------------------------------------------------------- 
+Para criar uma string na linguagem Python, utiliza-se a sintaxe:
+
+  <nome-variável> = <valor>
+  
+É possível realizar diversas operações sobre uma variável string. As operações mais utilizadas são:
+
+- Recuperar o tamanho da string
+- Obter um pedaço da string
+- Substituir um pedaço ou caractere por um outro pedaço ou caractere
+- Remover um pedaço da string
+- Verificar se a string é nula ou vazia
+- Remover espaços em branco da esquerda e da direita
+- Separar uma string em pedaços
+
+Exemplo:
+
+	#!python3
+
+	# Declarando uma string
+	str = ""
+
+	# Preenchendo uma string
+	str = "Linguagem Python"
+
+	# Obtendo o tamanho da string
+	tamanho = len(str)
+	print(tamanho)
+
+	# Obtendo uma substring
+	substring = str[:5]
+	print(substring)
+
+	# Substituindo uma substring por outra substring
+	str = str.replace("Python", "PYTHON")
+	print(str)
+
+	# Substituindo todas substring por outra substring
+	str = "red;green;blue"
+	str = str.replace(";", ",")
+	print(str)
+
+	# Removendo substring
+	str = "81200-200"
+	str = str.replace("-", "")
+	print(str)
+
+	# Comparando strings
+	str1 = "Python"
+	str2 = "PYTHON"
+	if str1 == str2:
+		print("São iguais")
+	else:
+		print("Não são iguais")
+
+	# Verificando se a string é vazia
+	str = ""
+	if str:
+		print("Não é vazia")
+	else:
+		print("É vazia")
+
+	# Removendo espaços em branco
+	str = " Python "
+	str = str.strip()
+	print(str)
+
+	# Quebrando um string
+	str = "banana,abacate,abacaxi"
+	str = str.split(",")
+	print(str)
+
+
+Caracteres
+---------------------------------------------------------------------------------------------------- 
+Para criar um caractere na linguagem Python, utiliza-se a sintaxe:
+
+  <nome-variável> = '<caractere>'
+
+A Linguagem Python oferece os seguintes recursos para identificação dos tipos de caracteres:
+  
+  isalnum()
+  isalpha()
+  isdecimal()
+  isdigit()
+  isidentifier()
+  islower()
+  isnumeric()
+  isprintable()
+  isspace()
+  istitle()
+  isupper()
+
+Exemplo:
+
+	#!python3
+
+	# Definindo um caractere
+	letra = 'P'
+
+	# Exibindo um caractere
+	print(letra)
+
+	# Identificando um determinado caractere
+	caractere = 'F'
+
+	print("O caractere ", caractere)
+	if caractere.isalnum():
+		print("  É um número ou uma letra")
+
+	if caractere.isalpha():
+		print("  É uma letra")
+
+	if caractere.isdecimal():
+		print("  É um caractere decimal")
+
+	if caractere.isdigit():
+		print("  É um digito")
+
+	if caractere.isidentifier():
+		print("  É um identificador válido")
+
+	if caractere.islower():
+		print("  É uma minúscula")
+
+	if caractere.isnumeric():
+		print("  É um número")
+
+	if caractere.isprintable():
+		print("  É um imprimivel")
+
+	if caractere.isspace():
+		print("  É um espaço em branco")
+
+	if caractere.istitle():
+		print("  É um titulo")
+
+	if caractere.isupper():
+		print("  É uma letra maiúscula")
+

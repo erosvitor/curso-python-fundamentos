@@ -1,0 +1,127 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - VETORES E MATRIZES
+====================================================================================================
+
+
+Introdução
+---------------------------------------------------------------------------------------------------- 
+Na Informática, vetores e matrizes são estruturas utilizadas para armazenar uma quantidade finita de
+dados. A diferença entre elas é que vetores são estruturas unidimensionais e matrizes são 
+multidimensionais.
+
+
+Vetores
+---------------------------------------------------------------------------------------------------- 
+Um vetor possui a seguinte sintaxe:
+  
+  numeros = []
+  
+Exemplo:
+
+	#!python3
+
+	# Declarando um vetor para números inteiros
+	numeros = []
+
+	# Atribuindo dados ao vetor
+	numeros.append(1)
+	numeros.append(1)
+	numeros.append(2)
+	numeros.append(3)
+	numeros.append(5)
+
+	# Atribuindo dados ao vetor na declaração
+	pares = [ 0, 2, 4, 6, 8 ]
+
+	# Utilizando o tamanho do vetor
+	for i in range(0, len(pares)):
+		print(pares[i])
+
+	# Mostrando os dados contidos no vetor
+	for num in pares:
+		print(num)
+
+	# Armazenando textos em vetores
+	frutas = ["Uva", "Maçã", "Abacaxi", "Manga", "Banana"]
+
+	# Ordenando um vetor de textos
+	frutas.sort()
+	for fruta in frutas:
+		print(fruta)
+  
+
+Operações sobre vetores
+---------------------------------------------------------------------------------------------------- 
+É possível realizar as seguintes operações sobre vetores:
+
+- Recuperar a quantidade de elementos
+- Adicionar um elemento no final do vetor
+- Colocar em ordem ascendente ou descendente
+- Pegar o último elemento sem precisar usar o índice
+- Embaralhar o conteúdo do vetor
+
+Exemplo:
+
+	#!python3
+
+	marcas_veiculos = ["Fiat", "Mercedes", "Ford", "BMW"]
+
+	# Obter quantidade de elementos
+	print(len(marcas_veiculos))
+
+	# Verificar se um determinado item existe na lista
+	print("Chevrolet" in marcas_veiculos)
+
+	# Adicionar item no final da lista
+	marcas_veiculos.append("Chevrolet")
+	print(marcas_veiculos)
+
+	# Inserir item numa determinada posição da lista
+	marcas_veiculos.insert(1, "Ferrari")
+	print(marcas_veiculos)
+
+	# Ordenar a lista em ordem ascendente
+	marcas_veiculos.sort()
+	print(marcas_veiculos)
+
+	# Ordenar a lista em ordem descendente
+	marcas_veiculos.reverse()
+	print(marcas_veiculos)
+
+	# Retirar o último elemento da lista
+	ultimo_elemento = marcas_veiculos.pop()
+	print(ultimo_elemento)
+	print(marcas_veiculos)
+
+	# Remover todos os elementos da lista
+	marcas_veiculos.clear()
+
+
+Matrizes
+---------------------------------------------------------------------------------------------------- 
+Uma matriz possui a seguinte sintaxe:
+
+  numeros = []
+
+Exemplo:
+
+	#!python3
+
+	# Declarando uma matriz para números inteiros
+	numeros = []
+
+	# Atribuindo dados para a matriz
+	numeros.append([1, 1])
+	numeros.append([2, 3])
+	print(numeros)
+
+	# Atribuindo dados para a matriz na declaração
+	coordenadas = [ [ 2, 2 ], [ 2, 8 ], [ 5, 2 ], [ 3, 2 ] ]
+
+	# Mostrando os dados contidos na matriz
+	for linha in coordenadas:
+		  for item in linha:
+		      print(item)
+        
+

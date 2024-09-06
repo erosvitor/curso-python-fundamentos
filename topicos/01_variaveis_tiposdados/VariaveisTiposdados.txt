@@ -1,0 +1,154 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - VARIÁVEIS E TIPOS DE DADOS
+====================================================================================================
+
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Uma variável é um espaço na memória do computador utilizado para armazenar um dado. A variável é o 
+recurso utilizado pelo programa de computador para armazenar o dado para posteriormente processá-lo.
+
+
+Variáveis
+----------------------------------------------------------------------------------------------------
+Para criar uma variável na linguagem Python, utiliza-se a sintaxe:
+
+    <identificador> = <dado>
+
+O 'identificador' é um nome arbitrário dado a variável e deve seguir as seguintes regras:
+
+- Deve iniciar por uma letra ou pelo caractere underscore (_)
+- Não pode iniciar por um dígito numérico
+- Não pode conter caracteres especiais, sinais de pontuação, colchetes ou parênteses
+- Não pode conter espaços em branco para definir nomes compostos
+
+  Obs: Python é case-sensitive, ou seja, letras minúsculas são diferentes de letras maiúsculas.
+
+O 'dado' é o conteúdo armazenado na variável. Quando a variável receber o conteúdo, será definido
+o tipo de dado da variável. Por exemplo, se o conteúdo for uma palavra ou frase, a variável será do
+tipo texto, caso seja um número inteiro, a variável será do tipo numeral. Mais sobre tipos de dados
+na próxima seção.
+
+No exemplo abaixo
+
+    name = "Fulano da Silva"
+
+A variável 'name' será do tipo texto, dado que o conteúdo 'Fulano da Silva' é um nome de pessoa e 
+um nome de pessoa é um texto.
+
+Exemplo:
+
+	#!python3
+
+	# Variable declaration
+	name = "Fulano da Silva"
+
+	# Printing variable
+	print(name)
+
+
+
+Tipos de dados
+----------------------------------------------------------------------------------------------------
+Tipos de dados disponíveis no Python:
+
+- int para números inteiros
+- float para números ponto-flutuante
+- bool para valores booleanos
+
+
+
+Tipos de dados e faixas de valores
+----------------------------------------------------------------------------------------------------
+Números inteiros: 
+- int: 32 bits, indefinido (depende da memória do computador)
+
+Números ponto-flutuante:
+- float: 32 bits, indefinido (depende da memória do computador)
+
+Dados booleano:
+- bool: True | False
+
+Exemplo:
+
+	#!python3
+
+	# Numbers: Integer types
+	oneInt = 1
+
+	# Numbers: Floating-point types
+	eFloat = 2.7182818284
+	print(eFloat)
+
+	# Boolean
+	active = True
+
+	# String
+	country = "Brazil"
+
+
+
+Literais numéricos
+----------------------------------------------------------------------------------------------------
+Literais numéricos disponíveis no Python:
+
+- Decimais: 123
+- Binários: 0b1111011  # 123 em binário
+- Octal: 0o173         # 123 em octal
+- Hexadecimais: 0x7B   # 123 em hexadecimal
+
+Para facilitar a leitura de literais numéricos extensos, utiliza-se o caractere underscore (_).
+
+  oneMillion = 1_000_000
+  creditCardNumber = 1234_5678_9012_3456L
+  hexBytes = 0xFF_EC_DE_5E
+  bytes = 0b11010010_01101001_10010100_10010010
+
+Exemplo:
+
+	#!python3
+
+	decimal = 123
+	binary = 0b1111011  # 123 em binário
+	octal = 0o173       # 123 em octal
+	hexa = 0x7B         # 123 em hexadecimal
+	print(decimal)
+	print(binary)
+	print(hexa)
+
+	oneMillion = 1_000_000
+	creditCardNumber = 1234_5678_9012_3456
+	hexBytes = 0xFF_EC_DE_5E
+	bytes = 0b11010010_01101001_10010100_10010010
+	print(oneMillion)
+	print(creditCardNumber)
+	print(hexBytes)
+	print(bytes)
+
+
+
+Verificando o tipo da variável
+----------------------------------------------------------------------------------------------------
+Para exibir o tipo de dado de uma determinada variável utiliza-se o recurso 'type()'.
+
+Exemplo:
+
+	#!python3
+
+	a = 5
+	print(type(a))
+
+	b = 3.14
+	print(type(b))
+
+	c = "Python"
+	print(type(c))
+
+
+Constantes
+----------------------------------------------------------------------------------------------------
+Constantes são variáveis que não podem ser modificadas depois de receberem um conteúdo. A linguagem
+Python não tem suporte a constantes. Por convenção, utiliza-se o nome da variável em caixa alta para
+sinalizar que a variável deve ser tratada como constante.
+

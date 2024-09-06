@@ -1,0 +1,76 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - ESTRUTURAS DE DECISÃO
+====================================================================================================
+
+
+Introdução
+----------------------------------------------------------------------------------------------------
+As estruturas de decisão permitem ao programa de computador executar ou não um determinado conjunto
+de comandos de acordo com o resultado de uma expressão lógica.
+
+
+Estruturas de decisão
+----------------------------------------------------------------------------------------------------
+Estruturas de decisão disponíveis na linguagem Python:
+  
+  IF
+
+
+IF
+----------------------------------------------------------------------------------------------------
+É útil quando um conjunto de comandos precisa ser executado mediante uma condição. Por exemplo, num
+programa para cadastrar pessoas, o nome do cônjuge só será solicitado se a pessoa for casada.
+
+A estrutura de decisão IF possui a seguinte sintaxe:
+
+  if <expressão-lógica>:
+    <comandos>
+  else:
+    <comandos>
+
+A expressão-lógica é uma expressão lógica construída utilizando um ou mais dos seguintes operadores
+lógicos e relacionais:
+
+Operadores lógicos:
+  and  ( e )
+  or   ( ou )
+  not  ( negação )
+
+Operadores relacionais:
+  ==  ( igual )
+  !=  ( não igual )
+  >   ( maior que )
+  <   ( menor que )
+  >=  ( maior igual que )
+  <=  ( menor igual que )
+
+Exemplo:
+
+#!python3
+
+# Avaliando apenas o resultado positivo
+# -------------------------------------
+idade = 18
+if (idade >= 18):
+  print("Maior de idade")
+
+# Avaliando o resultado positivo e negativo
+# -----------------------------------------
+idade = 17
+if (idade >= 18):
+  print("Maior de idade")
+else:
+  print("Menor de idade")
+
+
+# Avaliando mais de uma situação
+# ------------------------------
+idade = 15
+if (idade >= 18):
+  print("Maior de idade")
+elif (idade >= 16):
+  print("Menor de idade e pode votar")
+else:
+  print("Menor de idade e não pode votar")
+

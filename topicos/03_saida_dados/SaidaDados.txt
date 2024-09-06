@@ -1,0 +1,47 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - SAÍDA DE DADOS
+====================================================================================================
+
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Saída de dados é a operação executada pelo programa de computador onde dados são apresentados ao
+usuário.
+
+
+Saída de dados
+----------------------------------------------------------------------------------------------------
+A linguagem Python disponibiliza os seguintes comandos para saída de dados:
+  
+  print - Exibe um dado e avança para a próxima linha
+
+O comando acima descrito é útil na construção de programas console (aqueles executados no prompt do
+sistema operacional) e também para registrar dados no console de um servidor de aplicação como forma
+de debugar a execução do programa.
+
+Exemplo:
+
+	#!python3
+
+	# Mostrando um texto fixo
+	print("Comandos Saida de Dados")
+
+	# Mostrando o conteúdo de uma variável
+	PI = 3.14159265
+	print(PI)
+
+	# Mesclando texto fixo com conteúdo de variável
+	print(f"O valor da constante PI é {PI}")
+
+	# Mostrando dados sem pular linha
+	print("Observe que", end = " ")
+	print(" tudo será ", end = " ")
+	print("mostrado na mesma linha", end = " ")
+	print("")
+
+	# Formatando a saída dos dados
+	linguagem = "Python"
+	anoLancamento = 1991
+	print(f"A linguagem {linguagem} foi lançada em {anoLancamento}")
+

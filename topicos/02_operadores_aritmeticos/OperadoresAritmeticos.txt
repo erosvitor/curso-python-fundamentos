@@ -1,0 +1,49 @@
+
+====================================================================================================
+CURSO FUNDAMENTOS PYTHON - OPERADORES ARITMÉTICOS
+====================================================================================================
+
+
+Introdução
+----------------------------------------------------------------------------------------------------
+Um operador aritmético é um símbolo gráfico utilizado para construir expressões aritméticas.
+
+
+Operadores aritméticos
+----------------------------------------------------------------------------------------------------
+Operadores aritméticos disponíveis na linguagem Python:
+    
+  Operador de atribuição ( = )
+  Operadores aritméticos ( +, -, *, /, % (resto), * (exponenciação) )
+  Operadores compactos ( +=, -=, *=, /=, %=)
+
+Quando houver mais de um operador numa expressão aritmética, a seguinte ordem de precedência será
+aplicada:
+
+  - Parêntesis
+  - Exponenciação
+  - Multiplicação e Divisão
+  - Adição e Subtração
+
+Exemplo:
+
+	#!python3
+
+	n1 = 20
+	n2 = 10
+
+	adicao = n1 + n2
+	print(adicao)
+
+	subtracao = n1 - n2
+	print(subtracao)
+
+	multiplicacao = n1 * n2
+	print(multiplicacao)
+
+	divisao = n1 / n2
+	print(divisao)
+
+	resto = n1 % n2
+	print(resto)
+
