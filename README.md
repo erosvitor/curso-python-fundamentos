@@ -10,5 +10,8 @@ Teoria, exemplos e exercícios sobre os fundamentos da linguagem Python.
 * Vetores e Matrizes
 * Strings e Caracteres
 
+## Requisitos
+* Python 3
+  
 ## Licença
 Este projeto está sob licença do MIT. Para mais detalhes, ver o arquivo LICENSE.
